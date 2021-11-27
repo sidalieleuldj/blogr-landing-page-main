@@ -53,7 +53,7 @@ nav {
 }
 
 .links-container {
-  display: flex;
+  /* display: flex; */
 }
 
 .links-container a {
@@ -65,8 +65,8 @@ nav {
   width: 80%;
 }
 
-.links-container.right {
-  justify-content: space-around;
+.right {
+  display: flex;
   width: 20%;
 }
 
@@ -147,7 +147,6 @@ nav h1 {
 }
 
 footer {
-  
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -156,18 +155,35 @@ footer {
   justify-items: center;
   margin-top: 3rem;
   padding: 2rem;
-  
 }
 
-footer ul{
+footer ul {
   margin-top: 2rem;
 }
 
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   color: white;
 }
 
-footer ul li{
+footer ul li {
   margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .links-container.left {
+    display: none;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer div {
+    margin-top: 3rem;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
 }
