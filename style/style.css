@@ -147,7 +147,27 @@ nav h1 {
 }
 
 footer {
+  
+  color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: black;
+  border-top-right-radius: 100px;
+  justify-items: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  
+}
 
+footer ul{
+  margin-top: 2rem;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li{
+  margin-top: 0.5rem;
 }
